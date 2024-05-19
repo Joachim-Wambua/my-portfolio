@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import PageTransition from "@/components/PageTransition";
 
 const inter = Inter({ subsets: ["latin"] });
+const source_sans = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Joachim | Portfolio",

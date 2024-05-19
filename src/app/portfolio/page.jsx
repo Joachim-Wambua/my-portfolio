@@ -3,6 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { projects } from "../../../data";
 import { useTransform } from "framer-motion";
 
 const items = [
@@ -44,7 +45,7 @@ const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-83%"]);
 
   return (
     <motion.div
@@ -60,25 +61,29 @@ const PortfolioPage = () => {
         <div
           className={`sticky top-0 flex h-screen gap-4 items-center overflow-hidden`}
         >
-          <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300 "></div>
-            {items.map((item) => (
+          <motion.div style={{ x }} className="flex bg-black">
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-[#000000] to-[#130F40] "></div>
+            {projects.map((project, index) => (
               <div
-                key={item.id}
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                key={project.id}
+                className={`h-screen w-screen flex items-center justify-center ${
+                  index % 2 === 0 ? "bg-gradient-to-r" : "bg-gradient-to-l"
+                } from-[#130F40] to-[#000000]`}
               >
                 <div className="flex flex-col gap-8 text-white my-20">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl">
-                    {item.title}
+                    {project.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[360px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image src={project.images.background} alt="" fill />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-md xl:w-[600px]">
-                    {item.desc}
+                    {project.project_overview}
                   </p>
-                  <Link href={item.link} className="flex justify-end ">
-                    <button  className="p-2 text-sm md:p-3 md:text-md lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-1 rounded hover:bg-black hover:text-white transition-colors">View Demo</button>
+                  <Link href={project.link} className="flex justify-end ">
+                    <button className="p-2 text-sm md:p-3 md:text-md lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-1 rounded hover:bg-black hover:text-white transition-colors">
+                      View Project
+                    </button>
                   </Link>
                 </div>
               </div>

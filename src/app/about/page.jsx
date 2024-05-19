@@ -2,12 +2,16 @@
 import Mind from "@/components/Mind";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 const AboutPage = () => {
   const containerRef = useRef();
 
   const { scrollYProgress } = useScroll({ container: containerRef });
+
+  const resumeLink =
+    "https://drive.google.com/uc?export=download&id=1_NIbCCNb71__EvZjVLY3idsUKdCkwWUT";
 
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});
@@ -26,7 +30,7 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-18 xl:p-24 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -41,32 +45,26 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+              I am a seasoned software developer with a passion for crafting
+              innovative web solutions and enhancing user experiences. With over
+              three years of experience in full-stack development, proficiency
+              in a range of technologies including ReactJS, Node.js, and API
+              integration, and a strong foundation in UI/UX design, I am
+              dedicated to driving tangible results and exceeding expectations
+              in every project I undertake. My career objective is to continue
+              leveraging my expertise to contribute to dynamic teams, tackle
+              challenging projects, and pursue continuous growth and excellence
+              in the ever-evolving field of technology.
             </p>
-            {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span>
+
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              {/* <svg
-                width="185"
-                height="77"
-                viewBox="0 0 370 114"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M66 2C66 29.4851 68.6687 64.5118 49.3333 87.4444C42.4997 95.5495 35.7683 97.6796 26.2222 101C20.002 103.164 8.87322 103.873 4 99C-0.260934 94.7391 2.94804 88.1756 8.22222 86.2222C13.7053 84.1915 17.942 84 23.7778 84C33.359 84 41.3193 83.5602 50.2222 87C56.6125 89.469 63.5773 91.9131 69.5555 95.5C75.4778 99.0533 87.1838 104.357 93.5 99.4444C96.1292 97.3995 96.2752 92.5118 96.9444 89.5C97.9646 84.9092 92.6432 83.2024 89 83C84.472 82.7484 82.3397 81.8856 82 88C81.8025 91.5554 83.5627 94.4193 86 97C88.9648 100.139 92.0717 100.96 96 98.7778C99.3106 96.9386 98 90.7299 98 87.5C98 85.0327 98.4365 83.1348 99.2222 80.7778C100.357 77.3743 99.2311 78.4486 101.5 77.9444C105.352 77.0886 108 76.4766 108 81.5C108 85.6646 109 89.3473 109 93.5C109 100.142 108.863 95.0454 110.5 91.4444C112.765 86.4616 116.631 81.205 121.5 78.5C127.057 75.4129 126 82.1509 126 85.5C126 92.5532 124.42 102 134 102C142.932 102 153 102.569 153 91.2222C153 87.1735 153.772 81.3206 148 81C141.934 80.663 142.107 81.8068 139.5 86.5C134.378 95.7204 137.972 105 149.5 105C153.589 105 153.996 99.8977 155.5 96.8889C157.902 92.0843 161 85.4067 161 80C161 74.0547 158.407 82.7413 157.222 84.2222C155.194 86.7574 155 92.5718 155 95.7778C155 99.9302 153.8 104.999 158 107.222C161.954 109.316 164.884 106.382 167.778 103.778C171.15 100.743 175.896 99.1107 180 97C186.143 93.8409 191.659 91.4099 198.222 89.2222C206.505 86.4614 214.839 87 223.5 87C230.613 87 231.628 104 222.5 104C216.954 104 199.251 107.814 207 95.2222C211.456 87.9805 214.484 80.6007 220 73.7778C229.781 61.6805 242.696 50.8197 256.222 43C264.769 38.0591 274.192 34.6264 283 30.2222C286.55 28.4473 280.07 32.3343 278.5 33.5556C271.707 38.8391 266.609 45.3914 260.556 51.4444C255.356 56.6444 250.682 61.459 246.5 67.5C242.917 72.6757 239.364 77.3825 236.556 83C233.829 88.4524 231.82 94.3142 228.556 99.4444C226.693 102.371 225.518 107.823 222.5 109.5C214.795 113.78 217.517 100.438 218.056 95.0556C218.678 88.8318 227.982 85.7572 233.056 88.6111C239.614 92.3003 245.506 97.7883 252 101.778C254.886 103.551 259.46 107 263 107C271.267 107 273.32 81.9392 268.778 77.2222C264.112 72.3774 261.206 80.5039 261 84C260.576 91.2135 257.836 96.9269 264.778 102C272.242 107.454 285.041 112.276 292.111 104.833C298.002 98.6323 304.301 90.8902 308.556 83.4444C310.355 80.295 310.132 84.6251 309.444 86C305.387 94.1158 303 102.264 303 111.5C303 116.021 337.534 99.1863 340.5 98C347.33 95.2679 355.47 93.8299 361.778 90C363.935 88.6902 365.473 88 368 88"
-                  stroke="black"
-                  strokeWidth="2"
-                />
-              </svg> */}
-
-              <Image alt="kim-signature" width={450} height={77} src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1711558367/signature_fpgqb9.png" />
+              <Image
+                alt="kim-signature"
+                width={270}
+                height={77}
+                src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1714918567/Signature-FontDelafield_iletar.png"
+              />
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
@@ -211,7 +209,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48"
+            className="flex flex-col gap-1 justify-center"
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}
@@ -235,20 +233,21 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Software Engineer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    Spearheaded development of a data management portal,
+                    slashing manual processing by 35% and refining UI/UX through
+                    100+ graphic designs and UIs.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                  <div className="p-3 text-[#0066CC] text-sm font-semibold">
+                    2022 - Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    KomezArt
                   </div>
                 </div>
                 {/* CENTER */}
@@ -256,7 +255,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-[#0066CC] bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -271,27 +270,28 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-[#0066CC] bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Junior Software Engineer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    Integrated APIs, fine-tuned database queries, and
+                    orchestrated AWS deployment, enhancing website functionality
+                    and performance.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                  <div className="p-3 text-[#0066CC] text-sm font-semibold">
+                    2022 - 2023{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    Social Enterprise NL
                   </div>
                 </div>
               </div>
@@ -301,16 +301,21 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Front End Engineer - Intern{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    Led front-end development, optimizing design cycles by 15%
+                    with UI wireframes and implementing LinkedIn Authentication
+                    for streamlined user access.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                  <div className="p-3 text-[#0066CC] text-sm font-semibold">
+                    2021 - 2022{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    ALX Africa
                   </div>
                 </div>
                 {/* CENTER */}
@@ -318,14 +323,19 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-[#0066CC] bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 "></div>
+                <div className="w-1/3"></div>
               </div>
             </motion.div>
           </div>
+          <Link href={resumeLink}>
+            <button className="w-full border-1 border-black rounded-lg hover:text-white hover:before:bg-black relative h-[50px] overflow-hidden border text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-gray-700 before:transition-all before:duration-500 hover:shadow-gray-500 hover:before:left-0 hover:before:w-full">
+              <span className="relative z-10">Download Resume</span>
+            </button>
+          </Link>
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
