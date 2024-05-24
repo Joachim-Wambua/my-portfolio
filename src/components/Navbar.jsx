@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="md:hidden lg:flex w-1/3 justify-center">
           <Link href="/" className="flex flex-row items-center justify-center">
             <Image
-              src="/kim-brand-dark.png"
+              src="/kim-brand-dark.svg"
               className=""
               width={63}
               height={63}
@@ -99,14 +99,17 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-4 w-1/3 justify-center">
-          <Link href="https://github.com/Joachim-Wambua">
+          <Link target="_blank" href="https://github.com/Joachim-Wambua">
             <FaGithub
               className=" text-[#051118] hover:text-gray-700"
               size={24}
             />
           </Link>
 
-          <Link href="https://www.linkedin.com/in/joachim-wambua/">
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/joachim-wambua/"
+          >
             <FaLinkedinIn
               className=" text-[#051118] hover:text-gray-700"
               size={24}

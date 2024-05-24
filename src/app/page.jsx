@@ -6,11 +6,13 @@ const Homepage = () => {
     <>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg-px-20 xl:px-48">
         {/* Image Container */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <div className="h-1/2 lg:h-full lg:mr-10 lg:w-1/2 relative">
           <Image
-            src="/hero.png"
+            src="/hero-img.png"
             alt="Hero Image"
             fill
+            // width={450}
+            // height={450}
             className="object-contain"
           />
         </div>
@@ -23,8 +25,9 @@ const Homepage = () => {
           </h1>
           {/* description */}
           <p className="md:text-lg">
-            Hello, I'm Joachim, your web maestro! With over 3 years in the game,
-            I am passionate about crafting captivating web applications and building an immersive user experience.
+            Hello, I'm Joachim, a software engineer with over 3 years in the web development,
+            I am passionate about crafting captivating web applications and
+            building immersive user experiences.
           </p>
 
           <div className="flex w-full gap-4">

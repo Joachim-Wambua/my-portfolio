@@ -134,4 +134,5 @@ const projects = [
     },
   },
 ];
+
 export { projects };

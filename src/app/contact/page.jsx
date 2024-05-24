@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const greeting = "Say Hello";
+  const greeting = "Let's Talk";
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
