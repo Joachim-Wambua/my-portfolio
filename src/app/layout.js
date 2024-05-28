@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={noto.className}>
+      <body className={inter.className}>
         <PageTransition>{children}</PageTransition>
       </body>
     </html>

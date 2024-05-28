@@ -7,6 +7,8 @@ import { projects } from "../../../data";
 import { useTransform } from "framer-motion";
 import InvertedButton from "@/components/InvertedButton";
 
+import "./styles.css";
+
 const PortfolioPage = () => {
   const ref = useRef();
 
@@ -21,13 +23,13 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-7xl text-center">
           My Work
         </div>
         <div
           className={`sticky top-0 flex h-screen gap-4 items-center overflow-hidden`}
         >
-          <motion.div style={{ x }} className=" flex  bg-black" >
+          <motion.div style={{ x }} className=" flex  bg-black">
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-[#000000] to-[#130F40] "></div>
             {projects.map((project, index) => (
               <div
@@ -36,7 +38,7 @@ const PortfolioPage = () => {
                   index % 2 === 0 ? "bg-gradient-to-r" : "bg-gradient-to-l"
                 } from-[#130F40] to-[#000000]`}
               >
-                <div className="flex flex-col gap-8 text-white my-20">
+                {/* <div className="flex flex-col gap-8 text-white my-20">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl">
                     {project.title}
                   </h1>
@@ -50,14 +52,37 @@ const PortfolioPage = () => {
                     href={`/project/${project.id}`}
                     className="flex justify-end pb-3 "
                   >
-                    <InvertedButton content="View Project" />
+                    <Button content="View Project" />
                   </Link>
-                </div>
+                </div> */}
+
+                <section class="app-design">
+                  <div class="app-design__wrapper flex flex-col wrapper--large">
+                    <div class="app-design__content blurb">
+                      <h2 class="text-5xl text-white font-bold w-80">
+                        {project.title}
+                      </h2>
+                      <p class="text-white font-regular w-80 my-8">
+                        {project.project_overview}
+                      </p>
+                      <Link href={`/project/${project.id}`}>
+                        <InvertedButton content="View Project" />
+                      </Link>
+                    </div>
+                  </div>
+                  <figure
+                    class="app-design__visual"
+                    style={{
+                      backgroundImage: `url(${project.images.background})`,
+                    }}
+                  ></figure>
+                </section>
               </div>
             ))}
           </motion.div>
         </div>
       </div>
+
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-6xl">Do You Have A Project?</h1>
         <div className="relative">
