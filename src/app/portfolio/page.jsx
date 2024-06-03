@@ -38,32 +38,15 @@ const PortfolioPage = () => {
                   index % 2 === 0 ? "bg-gradient-to-r" : "bg-gradient-to-l"
                 } from-[#130F40] to-[#000000]`}
               >
-                {/* <div className="flex flex-col gap-8 text-white my-20">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl">
-                    {project.title}
-                  </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[360px]">
-                    <Image src={project.images.background} alt="" fill />
-                  </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-md xl:w-[600px]">
-                    {project.project_overview}
-                  </p>
-                  <Link
-                    href={`/project/${project.id}`}
-                    className="flex justify-end pb-3 "
-                  >
-                    <Button content="View Project" />
-                  </Link>
-                </div> */}
 
-                <section class="app-design">
-                  <div class="app-design__wrapper flex flex-col wrapper--large">
-                    <div class="app-design__content blurb">
-                      <h2 class="text-5xl text-white font-bold w-80">
+                <section className="app-design">
+                  <div className="app-design__wrapper flex flex-col wrapper--large">
+                    <div className="app-design__content blurb">
+                      <h2 className="text-5xl text-white font-bold w-80">
                         {project.title}
                       </h2>
-                      <p class="text-white font-regular w-80 my-8">
-                        {project.project_overview}
+                      <p className="text-white font-regular w-80 my-8">
+                        {project.briefAbout}
                       </p>
                       <Link href={`/project/${project.id}`}>
                         <InvertedButton content="View Project" />
@@ -71,7 +54,7 @@ const PortfolioPage = () => {
                     </div>
                   </div>
                   <figure
-                    class="app-design__visual"
+                    className="app-design__visual"
                     style={{
                       backgroundImage: `url(${project.images.background})`,
                     }}

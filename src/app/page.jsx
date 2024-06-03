@@ -25,14 +25,14 @@ const Homepage = () => {
           </h1>
           {/* description */}
           <p className="md:text-lg">
-            Hello, I'm Joachim, a software engineer with over 3 years in the web development,
-            I am passionate about crafting captivating web applications and
-            building immersive user experiences.
+            Hello, I'm Joachim, a software engineer with over 3 years in the web
+            development, I am passionate about crafting captivating web
+            applications and building immersive user experiences.
           </p>
 
           <div className="flex w-full gap-4">
             <Link href="/portfolio">
-              <button class="rounded-lg before:ease relative h-12 w-40 overflow-hidden border border-gray-500 bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-40">
+              <button className="rounded-lg before:ease relative h-12 w-40 overflow-hidden border border-gray-500 bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-40">
                 <span relative="relative z-10">View My Work</span>
               </button>
             </Link>
