@@ -34,6 +34,49 @@ const projects = [
       image3:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1700772739/MockUp_Variant1_w0dngf.png",
     },
+    galleryImages: [
+      {
+        id: "registration",
+        title: "User Registration",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+      },
+
+      {
+        id: "login",
+        title: "User LogIn",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+      },
+
+      {
+        id: "dashboard",
+        title: "Main Dashboard",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+      },
+
+      {
+        id: "artwork-table",
+        title: "Artwork List View",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+      },
+
+      {
+        id: "artwork-upload",
+        title: "Artwork Upload Form",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
+      },
+
+      {
+        id: "user-profile",
+        title: "User Profile",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+      },
+    ],
     tech_stack: [
       {
         id: "react",
@@ -87,6 +130,42 @@ const projects = [
       image3:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029331/quiz-anim-a_ceh3o7.gif",
     },
+    galleryImages: [
+      {
+        id: "splash-screen",
+        title: "Splash Screen",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018360/quiztime-splashscreen_clptbx.png",
+      },
+
+      {
+        id: "login-registration",
+        title: "User LogIn & Registration",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018379/quiztime-auth-screens_hcusel.png",
+      },
+
+      {
+        id: "main-view",
+        title: "Quiz Category Selection",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018377/quiztime-main-menu_csz6lu.png",
+      },
+
+      {
+        id: "live-quiz",
+        title: "Live Quiz",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018358/quiztime-quiz_qekm5p.png",
+      },
+
+      {
+        id: "pass-fail-states",
+        title: "Quiz Pass/Fail States",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018376/quiztime-pass_failstates_j3np8n.png",
+      },
+    ],
     tech_stack: [
       {
         id: "flutter",
@@ -133,6 +212,49 @@ const projects = [
       image3:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029331/quiz-anim-a_ceh3o7.gif",
     },
+    galleryImages: [
+      {
+        id: "registration",
+        title: "User Registration",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+      },
+
+      {
+        id: "login",
+        title: "User LogIn",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+      },
+
+      {
+        id: "dashboard",
+        title: "Main Dashboard",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+      },
+
+      {
+        id: "artwork-table",
+        title: "Artwork List View",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+      },
+
+      {
+        id: "artwork-upload",
+        title: "Artwork Upload Form",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
+      },
+
+      {
+        id: "user-profile",
+        title: "User Profile",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+      },
+    ],
     tech_stack: [
       {
         id: "reactjs",
@@ -192,7 +314,8 @@ const projects = [
         ),
       }, // Assuming an icon
     ],
-    demoVideo: "https://drive.google.com/file/d/1wh5Q9CUhfAoZ1_7GCwnhS1HMUU9HO9XO/view?usp=sharing",
+    demoVideo:
+      "https://drive.google.com/file/d/1wh5Q9CUhfAoZ1_7GCwnhS1HMUU9HO9XO/view?usp=sharing",
     github: "https://github.com/Joachim-Wambua/MediChatApp",
     aboutClient:
       "AL for Health Network, an initiative of ALA, connects African healthcare leaders to address the continent's greatest health challenges. Through year-round engagements and biannual Gatherings, AL for Health builds a strong community of health practitioners and experts, striving for a healthy and prosperous Africa.",
@@ -207,6 +330,49 @@ const projects = [
       image3:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701198823/WebUI-MultipleDevices_fvbrkc.png",
     },
+    galleryImages: [
+      {
+        id: "registration",
+        title: "User Registration",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+      },
+
+      {
+        id: "login",
+        title: "User LogIn",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+      },
+
+      {
+        id: "dashboard",
+        title: "Main Dashboard",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+      },
+
+      {
+        id: "artwork-table",
+        title: "Artwork List View",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+      },
+
+      {
+        id: "artwork-upload",
+        title: "Artwork Upload Form",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
+      },
+
+      {
+        id: "user-profile",
+        title: "User Profile",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+      },
+    ],
     key_features:
       "Interactive Chat System\nIllness Symptom Checking & Triage\nKidney Disease Quality of Life Assessment\nPediatric Asthma Symptom Scale Evaluator\nCovid19 Symptoms Assessment\nMental Health Assessment\nDiabetes Risk Evaluation",
     project_objectives:
@@ -264,6 +430,49 @@ const projects = [
       image3:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1702060728/kmz-mockup-3_kgqynw.png",
     },
+    galleryImages: [
+      {
+        id: "registration",
+        title: "User Registration",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+      },
+
+      {
+        id: "login",
+        title: "User LogIn",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+      },
+
+      {
+        id: "dashboard",
+        title: "Main Dashboard",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+      },
+
+      {
+        id: "artwork-table",
+        title: "Artwork List View",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+      },
+
+      {
+        id: "artwork-upload",
+        title: "Artwork Upload Form",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
+      },
+
+      {
+        id: "user-profile",
+        title: "User Profile",
+        imageUrl:
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+      },
+    ],
   },
 ];
 

@@ -1,12 +1,10 @@
 // "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/Button";
-import InvertedButton from "@/components/InvertedButton";
-import { projects } from "../../../../data";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function ProjectPage({ project }) {
-
   return (
     <div className="h-full w-full overflow-scroll mx-auto ">
       {/* Header Section */}
@@ -17,7 +15,7 @@ export default function ProjectPage({ project }) {
               {project.title}
             </h1>
             <p className="max-w-2xl w-3/4 my-6 font-light text-lg text-gray-500 lg:my-6 md:text-md lg:text-md sm:w-full lg:w-3/4">
-              {project.aboutClient}
+              {project.project_overview}
             </p>
             <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
               <div className="flex w-full gap-4">
@@ -36,7 +34,7 @@ export default function ProjectPage({ project }) {
                   </Link>
                 )}
                 {project.figma && (
-                  <Link href={project.figma} target="_blank" >
+                  <Link href={project.figma} target="_blank">
                     <button className="border-1 border-black rounded-lg hover:text-white hover:before:bg-black relative h-[50px] w-40 overflow-hidden border text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-gray-700 before:transition-all before:duration-500 hover:shadow-gray-500 hover:before:left-0 hover:before:w-full">
                       <span className="relative z-10">View on Figma</span>
                     </button>
@@ -66,16 +64,14 @@ export default function ProjectPage({ project }) {
         </div>
       </section>
 
-      {/* Project Overview Section */}
+      {/* About Client Section */}
       <section className="bg-transparent">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6">
           <div className="text-gray-500 sm:text-lg ">
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
-              Project Overview
+              About Client
             </h2>
-            <p className="mb-8 font-light lg:text-md">
-              {project.project_overview}
-            </p>
+            <p className="mb-8 font-light lg:text-md">{project.aboutClient}</p>
           </div>
         </div>
       </section>
@@ -104,33 +100,9 @@ export default function ProjectPage({ project }) {
         </div>
       </section>
 
-      {/* Tech Stack Section */}
-      <section className="bg-transparent">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6">
-          <div className="flex flex-col pt-6">
-            <h1 className="mx-auto text-2xl my-2 font-bold items-center justify-center">
-              Tech Stack
-            </h1>
-          </div>
-          <div
-            className={`flex gap-20 items-center justify-center space-x-12 space-y-8 text-gray-500`}
-          >
-            {project.tech_stack.map((tech) => (
-              <a
-                key={tech.id}
-                className="flex flex-col hover:text-gray-900 items-center lg:justify-center"
-              >
-                {tech.icon}
-                <p className="text-md mt-3 hover:text-gray-900">{tech.name}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Key Features Section */}
       <section className="bg-transparent">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6">
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <Image
               className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
@@ -166,6 +138,67 @@ export default function ProjectPage({ project }) {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App Gallery */}
+      <section className="bg-gray-900 ">
+        <div className="w-[51vw] h-[100vh] my-6 mx-auto">
+          <h2 className="text-4xl text-center pt-4 font-bold text-white" >App Screens</h2>
+          <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            showArrows={true}
+            verticalSwipe={false}
+            showThumbs={false}
+            showIndicators={false}
+            swipable={false}
+            interval={5000}
+            showStatus={false}
+            transitionTime={500}
+            dynamicHeight={false}
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
+            className=""
+          >
+            {project.galleryImages.map((img) => (
+              <div key={img.id}>
+                <Image
+                  src={img.imageUrl}
+                  unoptimized={true}
+                  className="my-4"
+                  width={80}
+                  height={10}
+                  alt="hero image"
+                />
+                <h2 className="text-2xl font-bold text-white">{img.title}</h2>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+
+      {/* Tech Stack Section */}
+      <section className="bg-transparent">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6">
+          <div className="flex flex-col pt-6">
+            <h1 className="mx-auto text-2xl my-2 font-bold items-center justify-center">
+              Tech Stack
+            </h1>
+          </div>
+          <div
+            className={`flex gap-20 items-center justify-center space-x-12 space-y-8 text-gray-500`}
+          >
+            {project.tech_stack.map((tech) => (
+              <a
+                key={tech.id}
+                className="flex flex-col hover:text-gray-900 items-center lg:justify-center"
+              >
+                {tech.icon}
+                <p className="text-md mt-3 hover:text-gray-900">{tech.name}</p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
