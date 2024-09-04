@@ -3,7 +3,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import NavLink from "./NavLink";
+import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const links = [
   { url: "/", title: "Home" },
@@ -11,6 +13,7 @@ const links = [
   { url: "/portfolio", title: "Portfolio" },
   { url: "/contact", title: "Contact" },
 ];
+const inter = Inter({ subsets: ["latin"] });
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -72,7 +75,7 @@ const Navbar = () => {
       <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg-px-20 xl:px-48">
         <div className="hidden md:flex items-center justify-center gap-4 w-1/3">
           {links.map((link) => (
-            <NavLink link={link} key={link.title} />
+            <NavLink className="cursor-pointer" link={link} key={link.title} />
           ))}
         </div>
 
@@ -80,47 +83,47 @@ const Navbar = () => {
         <div className="md:hidden lg:flex w-1/3 justify-center">
           <Link href="/" className="flex flex-row items-center justify-center">
             <Image
-              src="/kim-brand-dark.png"
+              src="/kim-brand-dark.svg"
               className=""
               width={63}
               height={63}
               alt="Kim's Logo"
             />
-            <div className="flex flex-col mx-2 justify-center tracking-wider">
-              <p className="font-black uppercase text-md">Joachim</p>
-              <p className="font-normal text-[13.5px] uppercase ">Mwengi</p>
+            <div
+              className={`${inter.className} flex flex-col mx-2 justify-center tracking-wider`}
+            >
+              <p className="font-black uppercase text-[18px]">Joachim</p>
+              <p className="font-normal text-[15px] uppercase ">Mwengi</p>
             </div>
           </Link>
         </div>
 
         <div className="hidden md:flex gap-4 w-1/3 justify-center">
-          <Link href="https://github.com/Joachim-Wambua">
-            <Image
-              src="/github.png"
-              width={24}
-              height={24}
-              alt="Github Profile"
+          <Link target="_blank" href="https://github.com/Joachim-Wambua">
+            <FaGithub
+              className=" text-[#051118] hover:text-gray-700"
+              size={24}
             />
           </Link>
 
-          <Link href="https://www.linkedin.com/in/joachim-wambua/">
-            <Image
-              src="/linkedin.png"
-              width={24}
-              height={24}
-              alt="LinkedIn Profile"
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/joachim-wambua/"
+          >
+            <FaLinkedinIn
+              className=" text-[#051118] hover:text-gray-700"
+              size={24}
             />
           </Link>
 
-          <Link href="">
-            <Image
-              src="/instagram.png"
-              width={24}
-              height={24}
-              alt="Instagram Profile"
+          <Link href="#">
+            <FaInstagram
+              className="text-[#051118] hover:text-gray-700"
+              size={24}
             />
           </Link>
         </div>
+
         {/* Responsive Menu */}
         <div className="md:hidden">
           {/* Menu Button */}
@@ -155,7 +158,9 @@ const Navbar = () => {
             >
               {links.map((link) => (
                 <motion.div variants={menuListItems} key={link.title}>
-                  <Link href={link.url}>{link.title}</Link>
+                  <Link className="cursor-pointer" href={link.url}>
+                    {link.title}
+                  </Link>
                 </motion.div>
               ))}
             </motion.div>
