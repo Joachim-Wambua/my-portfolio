@@ -1,6 +1,5 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { projects } from "../../../data";
@@ -91,7 +90,7 @@ const PortfolioPage = () => {
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex justify-center items-center"
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
         </div>
       </div>

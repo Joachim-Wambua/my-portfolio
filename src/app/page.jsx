@@ -25,8 +25,8 @@ const Homepage = () => {
           </h1>
           {/* description */}
           <p className="md:text-lg">
-            Hello, I'm Joachim, a software engineer with over 3 years in the web
-            development, I am passionate about crafting captivating web
+            Hello, I&lsquo;m Joachim, a software engineer with over 3 years in
+            the web development, I am passionate about crafting captivating web
             applications and building immersive user experiences.
           </p>
 
