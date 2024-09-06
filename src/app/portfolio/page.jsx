@@ -37,14 +37,13 @@ const PortfolioPage = () => {
                   index % 2 === 0 ? "bg-gradient-to-r" : "bg-gradient-to-l"
                 } from-[#130F40] to-[#000000]`}
               >
-
                 <section className="app-design">
                   <div className="app-design__wrapper flex flex-col wrapper--large">
-                    <div className="app-design__content blurb">
+                    <div className="app-design__content blurb w-80">
                       <h2 className="text-5xl text-white font-bold w-80">
                         {project.title}
                       </h2>
-                      <p className="text-white font-regular w-80 my-8">
+                      <p className="text-white font-regular w-80 py-4">
                         {project.briefAbout}
                       </p>
                       <Link href={`/project/${project.id}`}>
@@ -82,7 +81,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Full Stack Software Engineer
+                Contact Me Today!
               </textPath>
             </text>
           </motion.svg>

@@ -21,13 +21,13 @@ const Homepage = () => {
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-bold">
-            Crafting Digital Experiences, Building Tomorrow
+            Innovative Web Solutions, Tailored for You
           </h1>
           {/* description */}
           <p className="md:text-lg">
-            Hello, I&lsquo;m Joachim, a software engineer with over 3 years in
-            the web development, I am passionate about crafting captivating web
-            applications and building immersive user experiences.
+            Hi! I&lsquo;m Joachim, a dedicated software engineer blending
+            creativity and code to deliver stunning digital experiences that
+            resonate with users and drive success
           </p>
 
           <div className="flex w-full gap-4">

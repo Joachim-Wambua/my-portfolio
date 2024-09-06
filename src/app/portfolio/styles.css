@@ -54,10 +54,16 @@
 }
 @media (max-width: 480px) {
   .app-design__visual {
+    display: none;
     bottom: -100px;
     width: 576px;
     height: 366px;
   }
+  .app-design__content{
+    align-content: left;
+    text-align: left;
+  }
+
 }
 
 .wrapper,

@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const greeting = "Let's Talk";
+  const greeting = "Let's Connect";
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            😊
+            😎
           </motion.div>
         </div>
 
@@ -84,9 +84,11 @@ const ContactPage = () => {
             name="sender_email"
           />
           <span>Regards</span>
-          <button class="font-semibold w-full rounded-lg before:ease relative h-24 overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-24 before:w-3 before:translate-x-0 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-100">
-            Send
-          </button>
+          <div>
+            <button className="font-semibold w-full rounded-lg before:ease relative h-12 overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-24 before:w-3 before:translate-x-0 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-100">
+              Send
+            </button>
+          </div>
           {success && (
             <span className="text-green-600 font-semibold">
               Your Message Was Sent Successfully!

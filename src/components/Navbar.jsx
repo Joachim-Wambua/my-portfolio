@@ -116,12 +116,12 @@ const Navbar = () => {
             />
           </Link>
 
-          <Link href="#">
+          {/* <Link href="#">
             <FaInstagram
               className="text-[#051118] hover:text-gray-700"
               size={24}
             />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Responsive Menu */}
