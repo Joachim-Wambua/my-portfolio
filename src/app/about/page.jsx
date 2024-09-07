@@ -32,29 +32,43 @@ const AboutPage = () => {
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-18 xl:p-24 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-4 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
               src="https://res.cloudinary.com/dltjv8zbh/image/upload/v1698169254/me_plol5i.jpg"
               alt=""
               width={112}
               height={112}
+              unoptimized
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg">
-              I am a seasoned software developer with a passion for crafting
-              innovative web solutions and enhancing user experiences. With over
-              three years of experience in full-stack development, proficiency
-              in a range of technologies including ReactJS, Node.js, and API
-              integration, and a strong foundation in UI/UX design, I am
-              dedicated to driving tangible results and exceeding expectations
-              in every project I undertake. My career objective is to continue
-              leveraging my expertise to contribute to dynamic teams, tackle
-              challenging projects, and pursue continuous growth and excellence
-              in the ever-evolving field of technology.
+            <p className="text-md">
+              I am a seasoned full-stack developer with a deep passion for
+              building innovative, beautifully designed web applications. With
+              substantial experience in full-stack development, I specialize in
+              the MERN stack, with expertise in ReactJS, Next.js, and TypeScript
+              for crafting seamless, engaging user experiences. Leveraging my
+              background in graphic design, I bring a unique creative touch to
+              frontend engineering, ensuring every project is visually
+              captivating and user-friendly.
+            </p>
+
+            <p className="text-md">
+              On the backend, I am equally proficient, with strong capabilities
+              in Node.js and Python, building robust APIs and scalable
+              architectures that power efficient, high-performance applications.
+              I thrive on tackling complex challenges, continuously learning,
+              and collaborating with dynamic teams to deliver impactful digital
+              solutions.
+            </p>
+
+            <p className="text-md">
+              My goal is to continue honing my skills, pushing the boundaries of
+              web development, and contributing to projects that demand both
+              technical excellence and creative vision.
             </p>
 
             {/* BIOGRAPHY SIGN SVG*/}

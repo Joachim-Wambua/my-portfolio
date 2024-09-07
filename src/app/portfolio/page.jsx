@@ -68,7 +68,7 @@ const PortfolioPage = () => {
         <h1 className="text-6xl">Do You Have A Project?</h1>
         <div className="relative">
           <motion.svg
-            animate={{ rotate: 360 }}
+            animate={{ rotate: -360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
             className="w-64 h-64 md:w-[500px] md:h-[500px]"
@@ -81,7 +81,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Contact Me Today!
+                Contact Me!
               </textPath>
             </text>
           </motion.svg>
