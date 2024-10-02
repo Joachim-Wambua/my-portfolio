@@ -1,6 +1,7 @@
 "use client";
 import { FaReact, FaNodeJs, FaDatabase, FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { AiOutlineOpenAI } from "react-icons/ai";
 import {
   SiFlutter,
   SiFirebase,
@@ -190,18 +191,118 @@ const projects = [
     project_overview:
       "QuizTime Trivia App, built with Flutter and Dart, offers diverse quizzes, personalized accounts, and score tracking, blending entertainment, competition, and knowledge enrichment seamlessly.",
   },
+
+  // {
+  //   id: "maadvocates",
+  //   color: "from-[#000000] to-[#2D3436]",
+  //   title: "Mosota Abunga Advocates Website",
+  //   author: "Joachim Mwengi",
+  //   client: "Mosota Abunga & Associates Advocates, LLP",
+  //   category: "Website Development",
+  //   link: "https://www.maassociates.co.ke",
+  //   aboutClient:
+  //     "Mosota Abunga & Associates Advocates, LLP is a distinguished boutique law firm specializing in commercial, property, and dispute resolution law, offering expertise across various legal domains.",
+  //   briefAbout:
+  //     "Information Website for Mosota Abunga & Associates Advocates, LLP",
+  //   images: {
+  //     background:
+  //       "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716741303/maa-mockups_oe5iwc.png",
+  //     image1:
+  //       "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716807398/browser-maa-site_qhujpu.png",
+  //     image2:
+  //       "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029416/quiz-anim-b_zl8w9f.gif",
+  //     image3:
+  //       "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029331/quiz-anim-a_ceh3o7.gif",
+  //   },
+  //   galleryImages: [
+  //     {
+  //       id: "registration",
+  //       title: "User Registration",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+  //     },
+
+  //     {
+  //       id: "login",
+  //       title: "User LogIn",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+  //     },
+
+  //     {
+  //       id: "dashboard",
+  //       title: "Main Dashboard",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+  //     },
+
+  //     {
+  //       id: "artwork-table",
+  //       title: "Artwork List View",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+  //     },
+
+  //     {
+  //       id: "artwork-upload",
+  //       title: "Artwork Upload Form",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
+  //     },
+
+  //     {
+  //       id: "user-profile",
+  //       title: "User Profile",
+  //       imageUrl:
+  //         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+  //     },
+  //   ],
+  //   tech_stack: [
+  //     {
+  //       id: "reactjs",
+  //       name: "ReactJS",
+  //       icon: <FaReact fontSize={40} className="h-9 hover:text-gray-900" />,
+  //     },
+  //     {
+  //       id: "tailwind",
+  //       name: "Tailwind CSS",
+  //       icon: (
+  //         <RiTailwindCssFill
+  //           fontSize={40}
+  //           className="h-9 hover:text-gray-900"
+  //         />
+  //       ),
+  //     },
+  //     {
+  //       id: "nodejs",
+  //       name: "NodeJS",
+  //       icon: <FaNodeJs fontSize={40} className="h-9 hover:text-gray-900" />,
+  //     },
+  //     {
+  //       id: "figma",
+  //       name: "Figma",
+  //       icon: <FaFigma fontSize={40} className="h-9 hover:text-gray-900" />,
+  //     },
+  //   ],
+  //   key_features:
+  //     "Aesthetically Pleasing & Thematic design\nFunctional Contact Form\nComprehensive Service Descriptions\nProfessional Lawyer Profiles\nCompelling Call-To-Action\nMobile Responsive",
+  //   project_objectives:
+  //     "QuizTime Trivia App, built with Flutter and Dart, offers diverse quizzes, personalized accounts, and score tracking, blending entertainment, competition, and knowledge enrichment seamlessly.",
+  //   project_overview:
+  //     "QuizTime Trivia App, built with Flutter and Dart, offers diverse quizzes, personalized accounts, and score tracking, blending entertainment, competition, and knowledge enrichment seamlessly.",
+  // },
+
   {
-    id: "maadvocates",
+    id: "custom-tee-app",
     color: "from-[#000000] to-[#2D3436]",
-    title: "Mosota Abunga Advocates Website",
+    title: "3D T-Shirt Customization Web App",
     author: "Joachim Mwengi",
-    client: "Mosota Abunga & Associates Advocates, LLP",
+    client: "Boldify Creatives",
     category: "Website Development",
-    link: "https://www.maassociates.co.ke",
+    link: "https://custom-tees.vercel.app/",
     aboutClient:
-      "Mosota Abunga & Associates Advocates, LLP is a distinguished boutique law firm specializing in commercial, property, and dispute resolution law, offering expertise across various legal domains.",
-    briefAbout:
-      "Information Website for Mosota Abunga & Associates Advocates, LLP",
+      "Boldify Creatives is an innovative agency specializing in transforming brands through creative solutions that inspire and engage. They offer a range of services, from branding and signage to graphic design, web development, and digital marketing, enabling businesses to connect with their target audiences and achieve their goals in a competitive market.",
+    briefAbout: "3D Web App for Customizing T-Shirt Designs",
     images: {
       background:
         "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716741303/maa-mockups_oe5iwc.png",
@@ -214,45 +315,31 @@ const projects = [
     },
     galleryImages: [
       {
-        id: "registration",
-        title: "User Registration",
+        id: "homepage",
+        title: "Home Page",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727872254/T-shirt_App_ibq4lz.png",
       },
 
       {
-        id: "login",
-        title: "User LogIn",
+        id: "custom-tee",
+        title: "T-Shirt Logo Customization",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727873500/Logo_Upload_edmcqf.png",
       },
 
       {
-        id: "dashboard",
-        title: "Main Dashboard",
+        id: "custom-color",
+        title: "Tee Color Customization",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727873503/Custom_Page_t93mfu.png",
       },
 
       {
-        id: "artwork-table",
-        title: "Artwork List View",
+        id: "ai-prompt",
+        title: "AI Prompt View",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
-      },
-
-      {
-        id: "artwork-upload",
-        title: "Artwork Upload Form",
-        imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
-      },
-
-      {
-        id: "user-profile",
-        title: "User Profile",
-        imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727873497/AI_Prompt_kqccyb.png",
       },
     ],
     tech_stack: [
@@ -277,18 +364,21 @@ const projects = [
         icon: <FaNodeJs fontSize={40} className="h-9 hover:text-gray-900" />,
       },
       {
-        id: "figma",
-        name: "Figma",
-        icon: <FaFigma fontSize={40} className="h-9 hover:text-gray-900" />,
+        id: "openai",
+        name: "Open AI",
+        icon: (
+          <AiOutlineOpenAI fontSize={40} className="h-9 hover:text-gray-900" />
+        ),
       },
     ],
     key_features:
-      "Aesthetically Pleasing & Thematic design\nFunctional Contact Form\nComprehensive Service Descriptions\nProfessional Lawyer Profiles\nCompelling Call-To-Action\nMobile Responsive",
+      "Color Customization: Choose from a wide spectrum of colors to personalize your T-shirt.\nLogo Upload: Seamlessly upload your own logo and apply it to the 3D model.\nTexture Upload: Add a custom texture for a unique design.\nAI-Powered Designs: Use OpenAI’s DALL-E 3 API to generate custom logos and textures with chat prompts.",
     project_objectives:
       "QuizTime Trivia App, built with Flutter and Dart, offers diverse quizzes, personalized accounts, and score tracking, blending entertainment, competition, and knowledge enrichment seamlessly.",
     project_overview:
-      "QuizTime Trivia App, built with Flutter and Dart, offers diverse quizzes, personalized accounts, and score tracking, blending entertainment, competition, and knowledge enrichment seamlessly.",
+      "The 3D T-Shirt Customization App empowers users to design personalized T-shirts with an intuitive platform and immersive 3D technology for real-time previews. Its seamless interface allows for easy customization of colors, textures, and logos, while AI integration through OpenAI's DALL-E 3 API enables automated design generation, enhancing creative possibilities.",
   },
+
   {
     id: "medichat-app",
     title: "MediChat Web App",
