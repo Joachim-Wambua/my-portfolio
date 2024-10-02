@@ -305,13 +305,13 @@ const projects = [
     briefAbout: "3D Web App for Customizing T-Shirt Designs",
     images: {
       background:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716741303/maa-mockups_oe5iwc.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727898283/mockup_1_ld4frn.png",
       image1:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716807398/browser-maa-site_qhujpu.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727898277/custom_page_qlemqi.png",
       image2:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029416/quiz-anim-b_zl8w9f.gif",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727898283/mockup_1_ld4frn.png",
       image3:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1701029331/quiz-anim-a_ceh3o7.gif",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727873497/AI_Prompt_kqccyb.png",
     },
     galleryImages: [
       {
