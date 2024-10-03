@@ -512,55 +512,48 @@ const projects = [
     briefAbout: "E-commerce website for KomezArt",
     images: {
       background:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716750214/kmz-website_l2dol6.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984124/mockup-laptop_dgiwlt.png",
       image1:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1716807398/browser-kmz-site_sofpej.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984693/browsermockup_foeqdz.png",
       image2:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1702060758/kmz-mockup-2_1_du3oar.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727989525/mockup2_ibvy9j.png",
       image3:
-        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1702060728/kmz-mockup-3_kgqynw.png",
+        "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727988622/mockup2_d3qvtw.jpg",
     },
     galleryImages: [
       {
-        id: "registration",
-        title: "User Registration",
+        id: "home",
+        title: "Home Page",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/Registration_czbxty.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984115/homepg_vmg39v.png",
       },
 
       {
-        id: "login",
-        title: "User LogIn",
+        id: "about",
+        title: "About Us",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/LogIn_bxuwab.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984123/kmz-about_xaqvfb.png",
       },
 
       {
-        id: "dashboard",
-        title: "Main Dashboard",
+        id: "shop",
+        title: "Shop",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/MainDashboard_f15r6p.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984113/kmz-products_wjr4pe.png",
       },
 
       {
-        id: "artwork-table",
-        title: "Artwork List View",
+        id: "artists",
+        title: "Artists Page",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018336/ArtworkTableView_uwmc8p.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984117/kmz-artists_aeyw4e.png",
       },
 
       {
-        id: "artwork-upload",
-        title: "Artwork Upload Form",
+        id: "artist-resources",
+        title: "Artist Resources",
         imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/ArtworkUpload_yjkxdo.png",
-      },
-
-      {
-        id: "user-profile",
-        title: "User Profile",
-        imageUrl:
-          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1718018337/Profile_View_st6vs7.png",
+          "https://res.cloudinary.com/dltjv8zbh/image/upload/v1727984111/artist-resources_mjdipn.png",
       },
     ],
   },

@@ -10,6 +10,7 @@ export default function ProjectPage({ project }) {
       {/* Header Section */}
       <section className="bg-transparent">
         <div className="grid w-full items-center justify-center px-4 pt-2 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-4">
+          
           <div className="mx-10 flex flex-col w-full items-start lg:col-span-6 lg:items-start lg:ml-20 sm:mx-0">
             <h1 className="max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-4xl xl:text-5xl text-slate-800">
               {project.title}
@@ -51,10 +52,10 @@ export default function ProjectPage({ project }) {
               </div>
             </div>
           </div>
-          <div className="hidden lg:mt-0 lg:col-span-6 lg:flex">
+          <div className="lg:mt-0 lg:col-span-6 lg:flex">
             <Image
               src={project.images.image1}
-              className="shadow-md"
+              className="shadow-none"
               unoptimized={true}
               width={700}
               height={600}
@@ -89,7 +90,7 @@ export default function ProjectPage({ project }) {
               </p>
             </div>
             <Image
-              className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+              className="w-full mb-4 rounded-lg lg:mb-0 lg:flex"
               unoptimized={true}
               src={project.images.image2}
               width={300}
@@ -144,7 +145,7 @@ export default function ProjectPage({ project }) {
 
       {/* App Gallery */}
       <section className="bg-gray-900 ">
-        <div className="w-[51vw] h-[100vh] my-6 mx-auto">
+        <div className="lg:w-[51vw] sm:w-[81vw] my-6 mx-auto">
           <h2 className="text-4xl text-center pt-4 font-bold text-white" >App Screens</h2>
           <Carousel
             autoPlay={true}
@@ -163,7 +164,7 @@ export default function ProjectPage({ project }) {
             className=""
           >
             {project.galleryImages.map((img) => (
-              <div key={img.id}>
+              <div key={img.id} className="">
                 <Image
                   src={img.imageUrl}
                   unoptimized={true}
@@ -182,13 +183,13 @@ export default function ProjectPage({ project }) {
       {/* Tech Stack Section */}
       <section className="bg-transparent">
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6">
-          <div className="flex flex-col pt-6">
+          <div className="flex flex-col pt-3">
             <h1 className="mx-auto text-2xl my-2 font-bold items-center justify-center">
               Tech Stack
             </h1>
           </div>
           <div
-            className={`flex gap-20 items-center justify-center space-x-12 space-y-8 text-gray-500`}
+            className={`flex flex-row gap-20 items-center justify-center space-x-12 mt-4 text-gray-500`}
           >
             {project.tech_stack.map((tech) => (
               <a
