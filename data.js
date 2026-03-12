@@ -6,11 +6,11 @@ import {
   SiFlutter,
   SiFirebase,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiShopify,
-  SiMicrosoftazure,
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 const projects = [
   // KMZ Website
@@ -29,7 +29,7 @@ const projects = [
       {
         id: "css",
         name: "CSS",
-        icon: <SiCss3 fontSize={40} className="h-9 hover:text-gray-900" />,
+        icon: <SiCss fontSize={40} className="h-9 hover:text-gray-900" />,
       },
       {
         id: "js",
@@ -405,9 +405,7 @@ const projects = [
       {
         id: "azure",
         name: "Azure HealthBot",
-        icon: (
-          <SiMicrosoftazure fontSize={40} className="h-9 hover:text-gray-900" />
-        ),
+        icon: <VscAzure fontSize={40} className="h-9 hover:text-gray-900" />,
       }, // Assuming an icon
     ],
     demoVideo:
