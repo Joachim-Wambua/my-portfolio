@@ -3,9 +3,10 @@
 import { projects } from "../../../../data"; // Adjust the path if necessary
 import { motion, useInView, useScroll } from "framer-motion";
 import ProjectDetails from "./ProjectDetails"; // Client component
+import { use } from "react";
 
 const ProjectPage = ({ params }) => {
-  const { id } = params;
+  const { id } = use(params);
   const project = projects.find((project) => project.id === id);
 
   if (!project) {
