@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Homepage = () => {
+  const resumeLink =
+    "https://docs.google.com/document/d/17jXtKeTRCnb6iYB3d_NHxzXujBxmvU_w7IijvnJOmdo/export?format=pdf";
+
   return (
     <>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg-px-20 xl:px-48">
@@ -24,20 +27,20 @@ const Homepage = () => {
           </h1>
           {/* description */}
           <p className="md:text-lg">
-            Hi! I&apos;m Joachim, a full-stack software engineer blending
-          creativity and code to deliver high-quality web applications that
-          resonate with users.
+            Hi, I’m Joachim — a full-stack software engineer and machine
+            learning developer building intelligent web applications that
+            combine data, creativity, and scalable engineering.
           </p>
 
           <div className="flex w-full gap-4">
             <Link href="/portfolio">
               <button className="rounded-lg before:ease relative h-12 w-40 overflow-hidden border border-gray-500 bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-40">
-                <span className="relative z-10">View My Work</span>
+                <span className="relative z-10">View Projects</span>
               </button>
             </Link>
-            <Link href="/contact">
+            <Link href={resumeLink}>
               <button className=" border-1 border-black rounded-lg hover:text-white hover:before:bg-black relative h-[50px] w-40 overflow-hidden border text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-gray-700 before:transition-all before:duration-500 hover:shadow-gray-500 hover:before:left-0 hover:before:w-full">
-                <span className="relative z-10">Contact Me</span>
+                <span className="relative z-10">Download Resume</span>
               </button>
             </Link>
           </div>

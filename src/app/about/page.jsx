@@ -11,7 +11,7 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const resumeLink =
-    "https://drive.google.com/uc?export=download&id=1_NIbCCNb71__EvZjVLY3idsUKdCkwWUT";
+    "https://docs.google.com/document/d/17jXtKeTRCnb6iYB3d_NHxzXujBxmvU_w7IijvnJOmdo/export?format=pdf";
 
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});
