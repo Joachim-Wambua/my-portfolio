@@ -73,29 +73,22 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-md">
-              I am a seasoned full-stack developer with a deep passion for
-              building innovative, beautifully designed web applications. With
-              substantial experience in full-stack development, I specialize in
-              the MERN stack, with expertise in ReactJS, Next.js, and TypeScript
-              for crafting seamless, engaging user experiences. Leveraging my
-              background in graphic design, I bring a unique creative touch to
-              frontend engineering, ensuring every project is visually
-              captivating and user-friendly.
+              I’m a Full-Stack Engineer, Machine Learning developer & a MSc.
+              Computer Science student at the University of Bonn, Germany,
+              focused on building intelligent systems & user-centered web
+              applications.
             </p>
 
             <p className="text-md">
-              On the backend, I am equally proficient, with strong capabilities
-              in Node.js and Python, building robust APIs and scalable
-              architectures that power efficient, high-performance applications.
-              I thrive on tackling complex challenges, continuously learning,
-              and collaborating with dynamic teams to deliver impactful digital
-              solutions.
+              I combine strong frontend engineering with backend systems and
+              emerging Machine Learning techniques to create scalable, impactful
+              digital products.
             </p>
 
             <p className="text-md">
-              My goal is to continue honing my skills, pushing the boundaries of
-              web development, and contributing to projects that demand both
-              technical excellence and creative vision.
+              Currently, I'm exploring how machine learning can enhance
+              real-world applications — from data-driven systems to interactive
+              user experiences.
             </p>
 
             {/* BIOGRAPHY SIGN SVG*/}
@@ -310,12 +303,14 @@ const AboutPage = () => {
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
                     Spearheaded development of a data management portal,
-                    slashing manual processing by 35% and refining UI/UX through
-                    100+ graphic designs and UIs.{" "}
+                    slashing manual processing by{" "}
+                    <span className="font-bold">35%</span> and refined UI/UX
+                    through <span className="font-bold">100+</span> graphic
+                    designs and UIs.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-[#0066CC] text-sm font-semibold">
-                    2022 - Present
+                    2022 - 2026
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -377,9 +372,10 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    Led front-end development, optimizing design cycles by 15%
-                    with UI wireframes and implementing LinkedIn Authentication
-                    for streamlined user access.{" "}
+                    Led front-end development, optimizing design cycles by{" "}
+                    <span className="font-bold">15%</span> with UI wireframes
+                    and implementing LinkedIn Authentication for streamlined
+                    user access.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-[#0066CC] text-sm font-semibold">
