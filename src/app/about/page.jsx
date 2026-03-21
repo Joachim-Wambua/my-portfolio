@@ -17,6 +17,33 @@ const AboutPage = () => {
   // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
+  const skills = {
+    Frontend: [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "SCSS",
+      "Redux",
+      "Framer Motion",
+    ],
+    Backend: ["Node.js", "Express.js", "Flask", "GraphQL", "Python"],
+    "Machine Learning": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "TensorFlow",
+    ],
+    Databases: ["MongoDB", "PostgreSQL", "Firebase"],
+    "3D & Graphics": ["Three.js", "WebGL"],
+    "Tools & DevOps": ["Docker", "AWS", "Git", "Webpack", "Vite", "Figma"],
+  };
+
+  const pill =
+    "rounded px-3 py-1 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black border border-black transition";
+
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
@@ -115,7 +142,7 @@ const AboutPage = () => {
             >
               SKILLS
             </motion.h1>
-            {/* SKILL LIST */}
+            {/* SKILL LIST
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -196,7 +223,38 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
               </div>
+            </motion.div> */}
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={isSkillRefInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col gap-6"
+            >
+              {Object.entries(skills).map(([category, items]) => (
+                <div key={category} className="flex flex-col gap-2">
+                  {/* Category Title */}
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                    {category}
+                  </h3>
+
+                  {/* Skills */}
+                  <div className="flex flex-wrap gap-3">
+                    {items.map((skill) => (
+                      <motion.div
+                        key={skill}
+                        className={pill}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        {skill}
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </motion.div>
+
             {/* SKILL SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -353,7 +411,7 @@ const AboutPage = () => {
         </div>
         {/* SVG CONTAINER */}
         <div className="absolute right-0 top-0 w-1/2 h-full opacity-70 pointer-events-none">
-        {/* <div className="hidden lg:block w-1/3 sticky top-0 z-10 xl:w-1/2 opacity-70 "> */}
+          {/* <div className="hidden lg:block w-1/3 sticky top-0 z-10 xl:w-1/2 opacity-70 "> */}
           <Mind scrollYProgress={scrollYProgress} />
         </div>
       </div>
