@@ -352,7 +352,8 @@ const AboutPage = () => {
           </Link>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+        <div className="absolute right-0 top-0 w-1/2 h-full opacity-70 pointer-events-none">
+        {/* <div className="hidden lg:block w-1/3 sticky top-0 z-10 xl:w-1/2 opacity-70 "> */}
           <Mind scrollYProgress={scrollYProgress} />
         </div>
       </div>

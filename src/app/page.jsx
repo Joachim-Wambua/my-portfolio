@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Spline from "@splinetool/react-spline/next";
 
 const Homepage = () => {
   const resumeLink =
@@ -17,6 +18,8 @@ const Homepage = () => {
             priority // Prioritizes Loading for LCP elements
             className="object-contain"
           />
+
+          {/* <Spline scene="https://prod.spline.design/k2VNgstBSzaTz2U1/scene.splinecode" /> */}
         </div>
 
         {/* Text Container */}
