@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const greeting = "Let's Connect";
+  const greeting = "Get in Touch";
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -22,16 +22,16 @@ const ContactPage = () => {
         form.current,
         {
           publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-        }
+        },
       )
       .then(
-        (result) => {
+        () => {
           setSuccess(true);
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
-        }
+        },
       );
   };
 
@@ -43,7 +43,7 @@ const ContactPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-        {/* TEXT CONTAINER */}
+        {/* TEXT */}
         <div className="h-1/2 mb-5 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <motion.div>
             {greeting.split("").map((letter, index) => (
@@ -60,35 +60,49 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            😎
+            🚀
           </motion.div>
         </div>
 
-        {/* FORM CONTAINER */}
+        {/* FORM */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full sm:h-full lg:w-1/2 bg-gradient-radial from-[#F9FCFF] to-[#DEE4EA] rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-gradient-radial from-[#F9FCFF] to-[#DEE4EA] rounded-xl text-[17px] flex flex-col gap-8 justify-center p-24 "
         >
           <span>Dear Joachim,</span>
-          <textarea
-            id=""
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-            name="message"
-            rows={6}
+
+          <span>My Name is</span>
+          <input
+            type="text"
+            name="sender_name"
+            className="bg-transparent border-b-2 border-black outline-none"
+            placeholder="Your name"
+            required
           />
+
           <span>My E-mail Address is:</span>
           <input
-            className="bg-transparent border-b-2 border-b-black outline-none"
             type="email"
             name="sender_email"
+            className="bg-transparent border-b-2 border-black outline-none"
+            placeholder="Your Email Address"
+            required
           />
-          <span>Regards</span>
-          <div>
-            <button className="font-semibold w-full rounded-lg before:ease relative h-12 overflow-hidden bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-24 before:w-3 before:translate-x-0 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-100">
-              Send
-            </button>
-          </div>
+
+          <span>Message:</span>
+          <textarea
+            name="message"
+            rows={6}
+            className="bg-transparent border-b-2 border-black outline-none"
+            placeholder="Tell me about your project..."
+            required
+          />
+
+          <button className="font-semibold w-full rounded-lg p-3 bg-black text-white shadow-xl transition-all hover:shadow-gray-700">
+            Start a Conversation
+          </button>
+
           {success && (
             <span className="text-green-600 font-semibold">
               Your Message Was Sent Successfully!
