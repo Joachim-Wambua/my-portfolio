@@ -77,7 +77,7 @@ const ContactPage = () => {
             type="text"
             name="sender_name"
             className="bg-transparent border-b-2 border-black outline-none"
-            placeholder="Your name"
+            placeholder="Your Name"
             required
           />
 
