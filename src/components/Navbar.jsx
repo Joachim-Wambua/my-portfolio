@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <div className="md:hidden lg:flex w-1/3 justify-center">
+        <div className="md:hidden lg:flex w-1/2 justify-center">
           <Link href="/" className="flex flex-row items-center justify-center">
             <Image
               src="/kim-brand-dark.svg"
