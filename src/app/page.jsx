@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Spline from "@splinetool/react-spline/next";
+import dynamic from "next/dynamic";
+
 
 const Homepage = () => {
   const resumeLink =
@@ -23,7 +26,7 @@ const Homepage = () => {
         </div>
 
         {/* Text Container */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 lg:h-full mt-12 lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-bold">
             Building Digital Experiences, Engineered for Performance.
@@ -35,7 +38,7 @@ const Homepage = () => {
             combine data, creativity, and scalable engineering.
           </p>
 
-          <div className="flex w-full gap-4">
+          <div className="flex flex-row w-full justify-center items-center pb-6 gap-4">
             <Link href="/portfolio">
               <button className="rounded-lg before:ease relative h-12 w-40 overflow-hidden border border-gray-500 bg-black text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-gray-700 hover:before:-translate-x-40">
                 <span className="relative z-10">View Projects</span>
